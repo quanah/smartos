@@ -1,0 +1,32 @@
+{
+    "alias": "sol11-build",
+    "autoboot": true,
+    "brand": "kvm",
+    "hostname": "sol11-build.example.com",
+    "resolvers": [
+        "8.8.8.8",
+        "8.8.4.4"
+    ],
+    "ram": 2048,
+    "vcpus": 1,
+    "nics": [
+        {
+            "interface": "net0",
+            "model": "e1000",
+            "nic_tag": "admin",
+            "ip": "93.184.216.34",
+            "gateway": "93.184.216.1",
+            "netmask": "255.255.255.0",
+            "primary": true
+
+        }
+    ],
+    "disks": [
+        {
+            "boot": true,
+            "model": "ide",
+            "size": 32768,
+            "compression": "on"
+        }
+    ]
+}

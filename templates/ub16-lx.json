@@ -1,0 +1,25 @@
+{
+  "alias": "ub16-lx",
+  "brand": "lx",
+  "hostname": "ub16-lx",
+  "kernel_version": "4.3.0",
+  "max_physical_memory": 3072,
+  "quota": 300,
+  "image_uuid": "8879c758-c0da-11e6-9e4b-93e32a67e805",
+  "resolvers": ["8.8.4.4","8.8.8.8"],
+  "nics": [
+    {
+      "nic_tag": "admin",
+      "ip": "93.184.216.34",
+      "netmask": "255.255.255.0",
+      "gateway": "93.184.216.1",
+      "primary": true
+    }
+  ],
+  "customer_metadata": {
+    "root_pw": "example_password",
+    "admin_pw": "example_password",
+    "root_authorized_keys": "ssh-rsa publickey user@example.com",
+    "user-script": "/usr/sbin/mdata-get root_authorized_keys > ~root/.ssh/authorized_keys ; /usr/sbin/mdata-get root_authorized_keys > ~admin/.ssh/authorized_keys"
+  }
+}

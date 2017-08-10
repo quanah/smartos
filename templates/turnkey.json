@@ -1,0 +1,32 @@
+{
+    "alias": "turnkey",
+    "autoboot": true,
+    "brand": "kvm",
+    "hostname": "turnkey.example.com",
+    "resolvers": [
+        "8.8.4.4",
+        "8.8.8.8"
+    ],
+    "ram": 4096,
+    "vcpus": 2,
+    "nics": [
+        {
+            "interface": "net0",
+            "model": "virtio",
+            "nic_tag": "admin",
+            "ip": "93.184.216.34",
+            "gateway": "93.184.216.1",
+            "netmask": "255.255.255.0",
+            "primary": true
+
+        }
+    ],
+    "disks": [
+        {
+            "boot": true,
+            "model": "virtio",
+            "size": 4194304,
+            "compression": "on"
+        }
+    ]
+}
